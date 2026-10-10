@@ -1,6 +1,6 @@
 services:
   backend:
-    image: eink-backend:latest
+    image: eink-fork-backend:latest
     build:
       context: .
       dockerfile: Dockerfile.backend
@@ -59,7 +59,7 @@ services:
       retries: 5
 
   frontend:
-    image: eink-frontend:latest
+    image: eink-fork-frontend:latest
     build:
       context: .
       dockerfile: Dockerfile.frontend
